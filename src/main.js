@@ -1,9 +1,18 @@
-import Vue from 'vue'
-import App from './App.vue'
-import './registerServiceWorker'
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
+import "./registerServiceWorker";
+import Meta from "vue-meta";
 
-Vue.config.productionTip = false
+Vue.use(Meta);
+
+//Importing Global SCSS
+import "@/assets/styles/main.scss";
+import "@/assets/styles/main-responsive.scss";
+
+Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  router,
+  render: (h) => h(App),
+}).$mount("#app");

@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/src/assets/fonts/Inter-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/src/assets/fonts/Inter-Medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("/src/assets/fonts/Inter-SemiBold.ttf") format("ttf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-stack;
+  color: $grey-0;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+  margin-top: 0.1rem;
+  margin-bottom: 0em;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 0.1rem;
+  margin-bottom: 0em;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 32px;
+  margin-top: 0.1rem;
+  margin-bottom: 0rem;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 0.1rem;
+  margin-bottom: 0rem;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 0.1rem;
+  margin-bottom: 0rem;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 0.1rem;
+  margin-bottom: 0em;
+}
+
+p {
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 18px;
+  margin: 0 0 0.5rem 0;
+}
+
+.p-sm {
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0 0 0.8rem 0;
+}
+
+//TEXT
+.fw--500 {
+  font-weight: 500;
+}
+.fw--600 {
+  font-weight: 600;
+}
+.fw--700 {
+  font-weight: 700;
+}
