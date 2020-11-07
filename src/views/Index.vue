@@ -1,5 +1,5 @@
 <template>
-  <div class="pg-index bgBackground">
+  <div class="pg-index">
     <div class="pg-container">
       <logo />
       <h2 class="titleName">Nosagie Onaiwu</h2>
