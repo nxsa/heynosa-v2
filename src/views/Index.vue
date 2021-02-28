@@ -1,54 +1,127 @@
 <template>
-  <div class="pg-index">
-    <div class="pg-container">
-      <logo />
-      <h2 class="titleName">Nosagie Onaiwu</h2>
-      <p class="titleDesc">Product Designer</p>
-      <div class="desc">
-        <p class="top">I'm a product designer focusing on simplifying digital experiences for you, me and everyone we know.</p>
-        <p class="lower">I do both User Interface Design and Frontend Development. I design with Adobe XD and Figma and write frontend with HTML, SCSS and Javascript. If we’re talking frameworks, I build with VueJS.</p>
-      </div>
-      <div class="contact">
-        <span class="__mail">nos.onaiwu@gmail.com</span>
-        <div class="__social">
-          <a href="https://dribbble.com/nxsa" target="_blank" class="__link" >
-            <dribbble />
-          </a>
-          <a href="https://github.com/Nxsa" target="_blank" class="__link">
-            <github />
-          </a>
-          <a href="https://www.behance.net/thenxsa" target="_blank" class="__link">
-            <behance />
-          </a>
-          <a href="https://medium.com/four-walls" target="_blank" class="__link">
-            <medium />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="pg-index">
+		<div class="pg-container">
+			<div class="contact">
+				<div class="--id">
+					<h4 class="__name">Nosa Onaiwu</h4>
+					<span class="__mail">nos.onaiwu@gmail.com</span>
+				</div>
+				<div class="__social">
+					<a href="https://dribbble.com/nxsa" target="_blank" class="__link">
+						<dribbble />
+					</a>
+					<a href="https://github.com/Nxsa" target="_blank" class="__link">
+						<github />
+					</a>
+					<a
+						href="https://www.behance.net/thenxsa"
+						target="_blank"
+						class="__link"
+					>
+						<behance />
+					</a>
+					<a
+						href="https://medium.com/four-walls"
+						target="_blank"
+						class="__link"
+					>
+						<medium />
+					</a>
+				</div>
+			</div>
+			<div class="pg--block">
+				<span class="block__title mono__font">About Me</span>
+				<div class="block__content">
+					<p class="__main--desc">
+						I’m Nosa, a product designer focusing on designing and building web
+						and mobile applications that solves problems for you, me and
+						everyone we know.
+					</p>
+					<p class="__desc">
+						I am sort of a multidisciplinary designer who does UX, UI, coding
+						and product management. I am passionate about creating, and
+						simplifying complex, digital experiences that foster consistent user
+						interactions across a product.
+					</p>
+				</div>
+			</div>
+			<div class="pg--block">
+				<span class="block__title mono__font">Experience</span>
+				<div class="block__content">
+					<ul class="work-list">
+						<li
+							class="list-item"
+							:class="{ pastRole: !exp.present }"
+							v-for="exp in experience"
+							:key="exp.id"
+						>
+							<span class="list__title">{{ exp.company }}</span>
+							<div class="list__desc">
+								<span class="role">{{ exp.role }}</span> -
+								<span class="duration" :class="{ pastRole: !exp.present }">{{
+									exp.duration
+								}}</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
-import Logo from "@/vectors/logo/Logo.vue";
 import Dribbble from "@/vectors/Dribbble";
 import Github from "@/vectors/Github";
 import Behance from "@/vectors/Behance";
 import Medium from "@/vectors/Medium";
 
 export default {
-  name: "Index",
-  components: {
-    Logo,
-    Github,
-    Dribbble,
-    Behance,
-    Medium
-  },
-  metaInfo: {
-    title: "Nosagie Onaiwu",
-    titleTemplate: "%s - Product Designer",
-  },
+	name: "Index",
+	components: {
+		Github,
+		Dribbble,
+		Behance,
+		Medium
+	},
+	data() {
+		return {
+			experience: [
+				{
+					id: 1,
+					company: "SameDayCustom",
+					role: "Product Designer/Manager",
+					duration: "March, 2020 to Present",
+					present: true
+				},
+				{
+					id: 2,
+					company: "Kobopay Technologies",
+					role: "Product Designer",
+					duration: "June, 2017 to Present",
+					present: true
+				},
+				{
+					id: 3,
+					company: "T40",
+					role: "Product Designer",
+					duration: "January, 2020  to January, 2021",
+					present: false
+				},
+				{
+					id: 4,
+					company: "G360Synergy Ltd",
+					role: "Product Designer",
+					duration: "January, 2017 to December, 2019",
+					present: false
+				}
+			]
+		};
+	},
+	metaInfo: {
+		title: "Nosa Onaiwu",
+		titleTemplate: "%s - Product Designer"
+	}
 };
 </script>
 

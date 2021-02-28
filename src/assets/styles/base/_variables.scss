@@ -1,12 +1,14 @@
-$gold: #ffd700;
-
 // Neutrals
 $grey-0: #ffffff;
-$grey-100: #91949a;
-$grey-900: #0f151a;
+$grey-200: #f4f3ee;
+$grey-600: #7d8ca3;
+$grey-900: #0e131f;
 
-$font-stack: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$font-stack: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+$mono-stack: "SF Mono", Consolas, "Andale Mono WT", "Andale Mono", Monaco,
+  "Courier New", Courier, monospace;
 
 $base-size: 10px;
 

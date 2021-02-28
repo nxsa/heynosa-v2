@@ -7,29 +7,43 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .pg--block {
+    .block__title {
+      width: 160px;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .pg-container {
-    margin-top: 16%;
+    margin-top: 80px;
     margin-left: 6%;
     padding-right: 16%;
+  }
+  .pg--block {
+    flex-direction: column;
+    .block__title {
+      margin-bottom: 24px;
+    }
   }
 }
 
 @media only screen and (max-width: 600px) {
+  .pg-container {
+    padding-right: 1%;
+  }
 }
 
 @media only screen and (max-width: 420px) {
-  .pg-container {
-    padding-right: 6%;
-    .titleName {
-      font-size: 3.2rem;
-      line-height: 40px;
+  .contact {
+    .--id {
+      flex-direction: column;
+      margin-bottom: 16px;
     }
-    .desc {
-      .top {
-        margin-top: 16px;
+  }
+  .pg--block {
+    .block__content {
+      .__main--desc {
         font-size: 2rem;
         line-height: 32px;
       }
