@@ -10,9 +10,6 @@
 					<a href="https://dribbble.com/nxsa" target="_blank" class="__link">
 						<dribbble />
 					</a>
-					<a href="https://github.com/Nxsa" target="_blank" class="__link">
-						<github />
-					</a>
 					<a
 						href="https://www.behance.net/thenxsa"
 						target="_blank"
@@ -21,11 +18,14 @@
 						<behance />
 					</a>
 					<a
-						href="https://medium.com/four-walls"
+						href="https://www.linkedin.com/in/nosa-onaiwu-a1b5078a/"
 						target="_blank"
 						class="__link"
 					>
-						<medium />
+						<linkedin />
+					</a>
+					<a href="https://github.com/Nxsa" target="_blank" class="__link">
+						<github />
 					</a>
 				</div>
 			</div>
@@ -38,10 +38,9 @@
 						everyone we know.
 					</p>
 					<p class="__desc">
-						I am sort of a multidisciplinary designer who does UX, UI, coding
-						and product management. I am passionate about creating, and
-						simplifying complex, digital experiences that foster consistent user
-						interactions across a product.
+						I am passionate about creating, and simplifying complex, digital
+						experiences that foster consistent user interactions across a
+						product.
 					</p>
 				</div>
 			</div>
@@ -74,7 +73,7 @@
 import Dribbble from "@/vectors/Dribbble";
 import Github from "@/vectors/Github";
 import Behance from "@/vectors/Behance";
-import Medium from "@/vectors/Medium";
+import Linkedin from "@/vectors/Linkedin";
 
 export default {
 	name: "Index",
@@ -82,7 +81,7 @@ export default {
 		Github,
 		Dribbble,
 		Behance,
-		Medium
+		Linkedin
 	},
 	data() {
 		return {
@@ -90,15 +89,15 @@ export default {
 				{
 					id: 1,
 					company: "SameDayCustom",
-					role: "Product Designer/Manager",
+					role: "Lead Product Designer",
 					duration: "March, 2020 to Present",
 					present: true
 				},
 				{
 					id: 2,
-					company: "Kobopay Technologies",
-					role: "Product Designer",
-					duration: "June, 2017 to Present",
+					company: "MIM Finance Company",
+					role: "UI/UX Designer",
+					duration: "March, 2022 to Present",
 					present: true
 				},
 				{
@@ -110,6 +109,13 @@ export default {
 				},
 				{
 					id: 4,
+					company: "Kobopay Technologies",
+					role: "Lead Product Designer",
+					duration: "June, 2017 to October, 2021",
+					present: false
+				},
+				{
+					id: 5,
 					company: "G360Synergy Ltd",
 					role: "Product Designer",
 					duration: "January, 2017 to December, 2019",
